@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 190vh;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../images/background.svg") no-repeat center center fixed;
+    background-size: cover;
+    backgfilter: brightness(100%);
+}

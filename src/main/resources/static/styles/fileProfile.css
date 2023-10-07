@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-side {
+    width: 27vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    & img {
+        width: 25vh;
+        height: 10vh;
+        margin-top: 10vh;
+    }
+    .trash {
+        width: 7vh;
+        height: 7vh;
+        margin-right: 1vh;
+        margin-top: 2vh;
+        position: relative;
+
+        .circle{
+            width: 5vh;
+            height: 5vh;
+            position: absolute;
+            background: #E73524;
+            border-radius: 100vh;
+            border-color: transparent;
+            cursor: pointer;
+        }
+
+        & img {
+            margin-top: -1.5vh;
+            margin-left: -1.5vh;
+            width: 3vh;
+            height: 3vh;
+            position: absolute
+        }
+    }
+}
+
+.right-side {
+    width: 151.5vh;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+
+    .page-title {
+        margin-bottom: 0.5vh;
+        margin-top: 0.5vh;
+        color: white;
+        font-size: 5vh;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    .iframe-zone {
+        width: 151.5vh;
+        height: 110vh;
+        position: relative;
+
+        .background {
+            width: 151.5vh;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            position: absolute;
+            background: white;
+            border-top-left-radius: 2vh;
+            border-top-right-radius: 2vh;
+
+            & iframe {
+                width: 151vh;
+                height: 110vh;
+                margin-top: 7vh;
+            }
+        }
+
+        .title {
+            width: 151.5vh;
+            height: 7vh;
+            left: 0;
+            top: 0;
+            position: absolute;
+            background: #E73524;
+            border-top-left-radius: 2vh;
+            border-top-right-radius: 2vh;
+        }
+
+        & img {
+            width: 4vh;
+            height: 4vh;
+            left: 1vh;
+            top: 2vh;
+            position: absolute
+        }
+
+        .file-name {
+            width: 80vh;
+            top: 2vh;
+            position: absolute;
+            left: 7vh;
+            color: white;
+            font-size: 3vh;
+            font-family: Montserrat, sans-serif;
+            font-weight: 600;
+            word-wrap: break-word;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .file-size {
+            width: 15vh;
+            top: 2.3vh;
+            position: absolute;
+            left: 97vh;
+            color: white;
+            font-size: 2.5vh;
+            font-family: Montserrat, sans-serif;
+            font-weight: 300;
+            word-wrap: break-word
+        }
+
+        .file-date {
+            width: 40vh;
+            top: 2.3vh;
+            position: absolute;
+            left: 115vh;
+            color: white;
+            font-size: 2.5vh;
+            font-family: Montserrat, sans-serif;
+            font-weight: 300;
+            word-wrap: break-word
+        }
+    }
+}

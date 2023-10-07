@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-side {
+    position: fixed;
+    width: 35vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    & img {
+        width: 35vh;
+        height: 20vh;
+    }
+}
+
+.right-side {
+    margin-left: 40vh;
+    width: 151.5vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+
+    .page-title {
+        margin-bottom: 0.5vh;
+        margin-top: 0.5vh;
+        color: white;
+        font-size: 5vh;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        word-wrap: break-word;
+    }
+
+    .centering {
+        margin-top: -30vh;
+    }
+
+    .search-side {
+        margin-top: 5vh;
+
+        .search {
+
+            & img {
+                position: absolute;
+                margin-top: 1vh;
+                margin-left: 1.5vh;
+            }
+
+            .search-input {
+                width: 80vh;
+                height: 5vh;
+                background: white;
+                border-radius: 9vh;
+                border-color: transparent;
+                color: black;
+                font-size: 3vh;
+                font-family: Montserrat, sans-serif;
+                font-weight: 300;
+                word-wrap: break-word;
+                padding-left: 7vh;
+            }
+
+        }
+
+        .search-result {
+            width: 100vh;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+
+            .file-item {
+                background-color: white;
+                width: 83vh;
+                margin-top: 3vh;
+                border-radius: 5vh;
+                height: 7vh;
+                padding: 2vh 3vh 3vh;
+                text-decoration: none;
+
+                .file-name {
+                    width: 80vh;
+                    top: 2vh;
+                    left: 7vh;
+                    color: black;
+                    font-size: 2.5vh;
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 600;
+                    word-wrap: break-word;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                .file-size {
+                    margin-top: 0.5vh;
+                    width: 80vh;
+                    top: 2.3vh;
+                    left: 97vh;
+                    color: black;
+                    font-size: 2vh;
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 300;
+                    word-wrap: break-word
+                }
+
+                .file-date {
+                    margin-top: 0.5vh;
+                    width: 80vh;
+                    top: 2vh;
+                    left: 115vh;
+                    color: black;
+                    font-size: 1.5vh;
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 300;
+                    word-wrap: break-word
+                }
+            }
+
+            .nothing-found {
+                margin-bottom: 0.5vh;
+                margin-top: 5vh;
+                color: #E73524;
+                font-size: 4vh;
+                font-family: Montserrat, sans-serif;
+                font-weight: 700;
+                word-wrap: break-word;
+            }
+
+        }
+    }
+}
+
+.file-upload {
+    background-color: white;
+    margin-top: 1vh;
+    margin-left: 3vh;
+    border-radius: 3vh;
+    padding-left: 2vh;
+    padding-top: 2vh;
+
+    .upload-title {
+        color: #E73524;
+        font-size: 20px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    & form {
+        margin-top: 2vh;
+    }
+
+    .button {
+        width: 10vh;
+        height: 4vh;
+        background: #E73524;
+        color: white;
+        font-size: 2.5vh;
+        font-family: Montserrat;
+        font-weight: 700;
+        word-wrap: break-word;
+        border: none;
+        float: right;
+        margin-bottom: 2vh;
+        margin-right: 2vh;
+        cursor: pointer;
+    }
+}
